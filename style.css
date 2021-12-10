@@ -1,13 +1,29 @@
-    .container {
+.container {
       width: 900px;
-      height: 100%;
-      margin: 40px auto;
+      height: 50%;
+      margin: 5px auto;
       border-radius: 25px;
       border: 1px solid #000;
+      background-color: #689a9e;
     }
 
-  .body {
-    background-image: url("forest.jfif");
+.description {
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: #a1c2cf;
+}
+
+.description h1,
+.description p {
+  margin: auto 10px 20px 10px;
+  padding:  10px;
+}
+
+#bg {
+    width = 100%;
+    height = 100%;
+    display: block;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: auto auto;
 }
