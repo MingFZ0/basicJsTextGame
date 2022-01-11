@@ -7,22 +7,25 @@
   <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
-<body class='gameContainer'>
+<body>
   <div class="container">
     <div class='description'>
       <h1>After Night</h1>
     </div>
   <!-- your content here... -->
-    <img id='bg' src="background.gif" height='50%' width='50%'>
-    <div class=actionBar>
-      <p>After A Long Day Of Work, You Feel Exhausted. You Decide To Head Home...</p>
+    <div class='img'>
+      <img id='bg' src="gameBG.gif">
     </div>
-    <div id="option-buttons" class="buttons-grid">
-      <button class="button"></button>
-      <button class="button"></button>
-      <button class="button"></button>
-      <button class="button"></button>
-    </div>
+    <div class='display'>
+      <p id='description'>After A Long Day Of Work, You Feel Exhausted. You Decide To Head Home...</p>
+        <p id='dialog'></p>
+        <div id="option-buttons" class="buttons-grid">
+          <button class="button" id='first_btn' onclick="onNextOption(event, 0)"></button>
+          <button class="button" id='second_btn' onclick="onNextOption(event, 1)"></button>
+          <button class="button" id='third_btn' onclick="onNextOption(event, 2)">Play Again</button>
+      </div>
+
+      </div>
   </div>
   <script src="js/script.js"></script>
 </body>
